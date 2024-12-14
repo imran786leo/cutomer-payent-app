@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Payment Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Payment Management</h1>
+        <div>
+            <h2>Enter Customer Details</h2>
+            <form id="customerForm">
+                <input type="text" id="customerName" placeholder="Customer Name" required>
+                <input type="text" id="customerPhone" placeholder="Phone Number" required>
+                <input type="number" id="outstandingAmount" placeholder="Outstanding Amount" required>
+                <button type="submit">Add Customer</button>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h2>Make Payment</h2>
+            <form id="paymentForm">
+                <input type="text" id="paymentPhone" placeholder="Phone Number" required>
+                <input type="number" id="paymentAmount" placeholder="Payment Amount" required>
+                <button type="submit">Submit Payment</button>
+            </form>
+        </div>
+        <hr>
+        <h2>Customer List</h2>
+        <table id="customerList">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Outstanding Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Customer rows will appear here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
